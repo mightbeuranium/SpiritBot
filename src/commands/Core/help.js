@@ -101,14 +101,14 @@ export async function createInitialHelpMenu(client) {
             },
             {
                 name: '\u200B',
-                value: `-# ${botName} is [open source](https://youtu.be/1jCZX8s3bJE?si=NPOYx-vxVE1I5vJK)`,
+                value: `-# ${botName} made by [uranium!](http://youtube.com/@uraniumdev), check him out!`,
                 inline: false,
             },
         ],
     });
 
     embed.setFooter({ 
-        text: "Made with ❤️" 
+        text: "Made with 🧪" 
     });
     embed.setTimestamp();
 
@@ -118,8 +118,8 @@ export async function createInitialHelpMenu(client) {
         .setStyle(ButtonStyle.Danger);
 
     const supportButton = new ButtonBuilder()
-        .setLabel("Support Server")
-        .setURL("https://discord.gg/QnWNz2dKCE")
+        .setLabel("Join the Uranium's Hangout Server!")
+        .setURL("https://discord.gg/Erd58qZ7ST")
         .setStyle(ButtonStyle.Link);
 
     const selectRow = createSelectMenu(
