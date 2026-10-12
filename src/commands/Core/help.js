@@ -112,11 +112,6 @@ export async function createInitialHelpMenu(client) {
     });
     embed.setTimestamp();
 
-    const bugReportButton = new ButtonBuilder()
-        .setCustomId(BUG_REPORT_BUTTON_ID)
-        .setLabel("Report Bug")
-        .setStyle(ButtonStyle.Danger);
-
     const supportButton = new ButtonBuilder()
         .setLabel("Join the Uranium's Hangout Server!")
         .setURL("https://discord.gg/Erd58qZ7ST")
@@ -129,7 +124,6 @@ export async function createInitialHelpMenu(client) {
     );
 
     const buttonRow = new ActionRowBuilder().addComponents([
-        bugReportButton,
         supportButton,
     ]);
 
