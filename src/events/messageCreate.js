@@ -111,7 +111,7 @@ async function handlePrefixCommand(message, client) {
     if (!(await isCommandEnabled(client, message.guild.id, resolvePrefixAccessKey(command.data, args), command.category))) {
       const embed = createEmbed({
         title: 'Command Disabled',
-        description: 'This command has been disabled for this server.',
+        description: 'nuh uh bro! this command has been disabled.',
         color: 'error',
       });
       await message.channel.send({ embeds: [embed] }).catch(() => {});
