@@ -11,7 +11,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "invisible",
+    status: "dnd",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -61,9 +61,18 @@ export const botConfig = {
   applications: {
     // Default questions shown when someone fills out an application.
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
+      { question: "What is your username / display name / id?", required: true },
+      { question: "How old are you?", required: false },
       { question: "Why do you want to join?", required: true },
+      { question: "What is your Timezone?", required: true },
+      { question: "Have you moderated another server before? If yes, how long have you been, what was your role, how much experience do you have and if you are still in the server?", required: true },
+      { question: "What's the reason you want to be a staff member for the server?", required: true },
+      { question: "Will you promise to be respectful and kind towards the community?", required: true },
+      { question: "Will you remember that, both staff and normal members HAVE to respect the normal rules and will remember that you are not special and that you can still will be warned / muted for breaking a rule?", required: true },
+      { question: "What if, a user breaks multiple rules, and no mods / higher ups are available, what would u do?", required: true },
+      { question: "What if, two users start discussing and again, no mods / higher ups are available, what would u do?", required: true },
+      { question: "What if, a moderator started abusing his powers, kicking anyone / nuking the server / going against discord's tos, what would u do?", required: true },
+      { question: "LAST QUESTION! Do you respect deers? (reference to @maya_fey289 / <@1345403269857677333>)", required: false },
     ],
 
     // Embed colors by application status.
